@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKO GAME</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/hard.js"></script>
+    <script src="https://kit.fontawesome.com/acb1545e16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href=""><i class="fa-solid fa-arrow-rotate-left"></i></a>
+        <h1>
+            Level - Hard
+        </h1>
+        <hr>
+    </div>
+    <h2 id="error">0</h2>
+
+    <!-- 9x9 board -->
+    <div id="board">
+
+    </div>
+    <br>
+    <!-- digit -->
+    <div id="digit">
+
+    </div>
+    <!-- Modal box for congratulatory message -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Congratulations! You've completed the Sudoku puzzle!</p>
+        </div>
+    </div>
+    <!-- button to show answer -->
+    <button id="answer" onclick="showAnswer()" class="showAnswer">Show Answer</button>
+</body>
+
+
+</html>

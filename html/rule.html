@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RULES</title>
+    <link rel="stylesheet" href="../css/rule.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-title">
+            <h1>
+                SODOKU RULES
+            </h1>
+            <hr>
+        </div>
+        <!-- last free cell method -->
+        <div class="last-free-cell">
+            <h2>
+                "Last Free Cell Rule"
+            </h2>
+            <p>
+                "Last free cell" is the basic Sudoku solving technique. It's pretty simple and based on the fact that
+                each 3×3 block, vertical column or horizontal row on Sudoku grid should contain numbers from 1 to 9 and
+                each number can be used only once within 3×3 block, vertical column or horizontal row.
+                <br><br>
+                Therefore, if we see that there is only one free cell left in the 3×3 block, vertical column or
+                horizontal row, then we have to define which number from 1 to 9 is missing and enter it in this empty
+                cell.
+                <br><br>
+                You may see the example below:
+            </p>
+            <div class="img">
+                <img src="../img/lastcell.png" alt="">
+            </div>
+        </div>
+        <!-- Last remaining cell -->
+        <div class="last-remaining-cell">
+            <h2>
+                "Last Remaining Cell Rule"
+            </h2>
+            <p>
+                "Last remaining cell" is another basic Sudoku strategy. It's based on the fact that numbers should not
+                be repeated within 3×3 block, vertical column and horizontal row.
+                <br><br>
+                Let's take a look at an example with the 3x3 block. There always must be number 8 - in each block,
+                column and row. There's already 8 in the column and in the row. As we already know, we can't repeat
+                numbers. So we can't place 8 there again. It means that there's only one cell remaining inside the block
+                and we should put number 8 into it.
+            </p>
+            <div class="img">
+                <img src="../img/remaining.png" alt="">
+            </div>
+        </div>
+        <!-- Other rule -->
+        <div class="other-rule">
+            <h2>
+                "What are the basic rules of Sudoku?"
+            </h2>
+            <p>
+                There are many other rules that can be used to solve Sudoku puzzles. Some of them are:
+                <br><br>
+            <ul>
+                <li>Sudoku grid consists of 9x9 spaces.</li>
+                <li>You can use only numbers from 1 to 9.</li>
+                <li>Each 3×3 block can only contain numbers from 1 to 9.</li>
+                <li>Each vertical column can only contain numbers from 1 to 9.</li>
+                <li>Each horizontal row can only contain numbers from 1 to 9.</li>
+                <li>Each number in the 3×3 block, vertical column or horizontal row can be used only once.</li>
+                <li>The game is over when the whole Sudoku grid is correctly filled with numbers.</li>
+            </ul>
+            <br>
+            There are already many numbers filled in on the grid in the simple Sudoku puzzles. Therefore it’s not so
+            difficult to cope with the solution if you are familiar with the basic rules. However, in order to solve
+            difficult levels and deal with them quickly, you need to use some tricks and learn advanced Sudoku
+            techniques.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
